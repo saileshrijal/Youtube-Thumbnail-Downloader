@@ -23,9 +23,13 @@ const thumbnail_downloader = (url) => {
     document.getElementById('hdImage').src = thumbnailHd;
     document.getElementById('mediumImage').src = thumbnailMd;
     document.getElementById('smallImage').src = thumbnailSmall;
+
+    document.getElementById('hdLink').href = thumbnailHd;
+    document.getElementById('mediumLink').href = thumbnailMd;
+    document.getElementById('smallLink').href = thumbnailSmall;
 }
 
-generateBtn.addEventListener('click', () => {
+generateBtn.onclick = () => {
     if (inputUrl.value != null) {
         thumbnail_downloader(inputUrl.value);
     }
@@ -36,7 +40,7 @@ generateBtn.addEventListener('click', () => {
             text: 'Input URL is empty or invalid',
         })
     }
-})
+}
 
 
 function showLoading() {
