@@ -11,7 +11,7 @@ const thumbnail_downloader = (url) => {
         let vidurl = match[1];
         console.log(vidurl)
         thumbnailHd = 'http://img.youtube.com/vi/' + vidurl + '/maxresdefault.jpg';
-        thumbnailMd = 'http://img.youtube.com/vi/' + vidurl + '/0.jpg';
+        thumbnailMd = 'http://img.youtube.com/vi/' + vidurl + '/2.jpg';
         thumbnailSmall = 'http://img.youtube.com/vi/' + vidurl + '/mqdefault.jpg';
     } else {
         Swal.fire({
